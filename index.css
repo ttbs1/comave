@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/04/2020, 03:34:41
+    Author     : Thiago
+*/
+
+@font-face{
+font-family: 'sketch';
+    src: url('util/fonts/sketch3D.woff') format('woff'),
+        url('util/fonts/sketch3D.ttf') format('truetype');
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.inicio {
+    //background-image: url(util/home/2.jpg);
+    //background-position: center top;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //background-attachment: fixed;
+    //color: #fff;
+    //font-size: large;
+    //text-shadow: 1px 1px 2px #000;
+    //padding-top: 300px;
+    padding-bottom: 100vh;
+}
+
+#textdiv {
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    margin: 40vh 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+
+@media(max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media(min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: -3px 3px 1px #0685cb;
+}
+
+h6 {
+    font-family: 'Archivo Black', sans-serif;
+    //text-shadow: -2px 2px 1px #0685cb;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #0685cb;
+    border-radius: 5px;
+}
+
+.sobre {
+    background-color: #f3f3f3;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: large;
+}
+
+.servicos {
+    background-image: url(util/home/1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.servicos h1 {
+    color: #fff;
+}
+
+.contato {
+    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    font-size: large;
+}
+
+.contato a {
+    color: #f2f3f4;
+}
+
+.nocolor {
+    padding: 4%;
+}
+
+.floating-text {
+    padding: 4%;
+    border-radius: 20px;
+    background: rgba(245, 130, 32, 0.45);
+    background: rgba(105, 105, 105, 0.91);
+}
+
+p {
+    font-size: larger;
+}
+
+.card {
+    margin-bottom: 1rem;
+    font-size: small;
+    width: 17rem;
+}
+
+.nav-item a:hover {
+    background-color: #0685cb;
+    color: #fff !important;
+    text-height: inherit;
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #f98220, #fff);
+    color: #fff !important;
+    text-shadow: 1px 1px #000;
+}
+
+.footer {
+    height: 35px;
+    color: #919191;
+    text-shadow: 1px 1px #000;
+    background-color: #28292b;
+}
+
+.footer a {
+    color: #919191;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.title1 {
+}

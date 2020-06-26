@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preload Images example</title>
+
+	<link href="util/PreloadJS-master/_assets/css/shared.css" rel="stylesheet" type="text/css"/>
+	<link href="util/PreloadJS-master/_assets/css/examples.css" rel="stylesheet" type="text/css"/>
+	<script src="util/PreloadJS-master/_assets/js/examples.js"></script>
+
+</head>
+<body onload="init()">
+
+<header class="PreloadJS">
+	<h1>Image Gallery</h1>
+
+	<p>This sample loads a number of images, and adds them to a canvas stage when they are complete. Click an image
+		to put it at the back of the stack.</p>
+
+	<p>Note that when loading images locally, you need to ensure that PreloadJS uses tag loading or CORS to avoid
+		cross-origin errors. Mouse interaction on images may not work locally when these errors occur.</p>
+</header>
+
+
+
+<script src="util/PreloadJS-master/_assets/libs/easeljs-NEXT.min.js"></script>
+<script src="util/PreloadJS-master/_assets/libs/tweenjs-NEXT.min.js"></script>
+
+<script type="text/javascript" src="util/PreloadJS-master/lib/preloadjs-NEXT.js"></script>
+<!-- We also provide hosted minified versions of all CreateJS libraries.
+	 http://code.createjs.com -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>COMAVE - Início</title>
+        <link rel="icon" href="util/comave/logo-min.png" type="image/icon type">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="util/bootstrap 5/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <script src="util/bootstrap 5/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="util/bootstrap 5/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        
+        <script src="util/links/fontisawesome.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="util/wow_js/animate.css" />
+
+        
+        
+	<script src="util/PreloadJS-master/_assets/js/examples.js"></script>
+
+        <style>
+            .wow:first-child {
+              visibility: hidden;
+            }
+        </style>
+
+    </head>
+    <body onload="init()">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#" style="margin-left: 15px;"><img src="util/comave/logo-no-shadow.png" width="100px" /></a>
+            <button id="navbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link black" href="#inicio" onclick="closenav();">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#sobre" onclick="closenav();">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a id="dropdown" class="nav-link dropdown-toggle" onmouseover="opendropdown()" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#sistema" onclick="closenav();">Sistema de gestão</a>
+                            <a class="dropdown-item" href="#site" onclick="closenav();">Site comercial</a>
+                            <a class="dropdown-item" href="#mobile" onclick="closenav();">Aplicativos mobile</a>
+                            <a class="dropdown-item" href="#outro" onclick="closenav();">Outros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contato" onclick="closenav();">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            function opendropdown() {
+                if (window.innerHeight < window.innerWidth)
+                    document.getElementById("dropdown").click();
+                }
+
+            function closenav() {
+                if (window.innerHeight > window.innerWidth)
+                    document.getElementById("navbutton").click();
+                }
+        </script>
+
+                       
+        <section id="inicio" class="inicio">
+            <div>
+                <div class="row">
+                    <div id="textdiv" class="text-right col-md-3">
+                        <h1 class="wow bouceInRight" data-wow-offset="300" data-wow-duration="2s" style="visibility: visible; animation-name: bounceInRight;">COMAVE</h1><h6 class="wow bouceInRight" data-wow-offset="300" data-wow-duration="2.3s" style="visibility: visible; animation-name: bounceInRight;">BALANÇAS</h6>
+                    </div>
+                </div>
+            </div>
+            <video id="videoBG" poster="util/comave/ff.jpg" autoplay muted loop>
+                <source src="util/comave/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <script src="util/PreloadJS-master/_assets/libs/easeljs-NEXT.min.js"></script>
+        <script src="util/PreloadJS-master/_assets/libs/tweenjs-NEXT.min.js"></script>
+
+        <script type="text/javascript" src="util/PreloadJS-master/lib/preloadjs-NEXT.js"></script>
+        <!-- We also provide hosted minified versions of all CreateJS libraries.
+                 http://code.createjs.com -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        
+        <section id="sobre" class="sobre">
+            <div class="container-fluid">
+                <div class="container nocolor text-center">
+                    <h1 class="display-4">SOBRE</h1>
+                    <p style="margin-top: 20px;"><strong></strong></p>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 text-justify" style="margin-top: 20px;">
+                            <img src="util/comave/logo.png" width="40%" /><br><br>
+                            
+                            Empresa conceituada em Lagoa da Prata e toda região. 
+                            A Comave balanças é uma empresa que se preocupa não 
+                            só com valores mas com a qualidade de serviços que é 
+                            a nossa meta principal, trabalhamos para melhor atendê-los 
+                            com competência, segurança e credibilidade. 
+                        </div>
+                        <div class="col-sm-6" style="margin-top: 20px;">
+                            
+                            <div><canvas id="myCanvas" width="540" height="400" style="max-width: 100%"></canvas></div>
+                        </div>
+                        <div class="col-sm-12" style="margin-top: 20px;">
+                            
+                            <a href="sobre.html" class="btn btn-default">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript" id="editable">
+	
+var loaderBar;
+var stage;
+var bar;
+var imageContainer;
+var currentImage;
+var loaderWidth;
+var loaderColor;
+var borderPadding;
+var preload;
+var oldItem;
+
+function init() {
+	canvas = document.getElementById("myCanvas");
+	stage = new createjs.Stage(canvas);
+	stage.enableMouseOver(10);
+
+	borderPadding = 10;
+
+	var barHeight = 20;
+	loaderColor = createjs.Graphics.getRGB(247, 247, 247);
+	loaderBar = new createjs.Container();
+
+	bar = new createjs.Shape();
+	bar.graphics.beginFill(loaderColor).drawRect(0, 0, 1, barHeight).endFill();
+
+	imageContainer = new createjs.Container();
+	imageContainer.x = 260;
+	imageContainer.y = 200;
+
+	loaderWidth = 300;
+	stage.addChild(imageContainer);
+
+	var bgBar = new createjs.Shape();
+	var padding = 3
+	bgBar.graphics.setStrokeStyle(1).beginStroke(loaderColor).drawRect(-padding / 2, -padding / 2, loaderWidth + padding, barHeight + padding);
+
+	loaderBar.x = canvas.width - loaderWidth >> 1;
+	loaderBar.y = canvas.height - barHeight >> 1;
+	loaderBar.addChild(bar, bgBar);
+
+	stage.addChild(loaderBar);
+
+	manifest = [
+		{src: "image1.jpg", id: "image0"},
+		{src: "image2.jpg", id: "image1"},
+		{src: "image3.jpg", id: "image2"},
+		{src: "image0.jpg", id: "image3"}
+	];
+
+	preload = new createjs.LoadQueue(true, "test/");
+
+	// Use this instead to use tag loading
+	//preload = new createjs.LoadQueue(false);
+
+	preload.on("progress", handleProgress);
+	preload.on("complete", handleComplete);
+	preload.on("fileload", handleFileLoad);
+	preload.loadManifest(manifest, true, "util/PreloadJS-master/_assets/art/");
+
+	createjs.Ticker.framerate = 30;
+}
+
+function stop() {
+	if (preload != null) {
+		preload.close();
+	}
+}
+
+function handleProgress(event) {
+	bar.scaleX = event.loaded * loaderWidth;
+}
+
+function handleFileLoad(event) {
+	var image = event.result;
+	var w = image.width;
+	var h = image.height;
+
+	var bmp = new createjs.Bitmap(image).set({
+		 scaleX: 0.75, scaleY: 0.75,
+		 regX: w / 2, regY: h / 2,
+		 rotation: Math.random() * 16 - 8,
+		 cursor: "pointer",
+		 x: borderPadding / 2 * 0.75, y: borderPadding / 2 * 0.7
+	});
+	bmp.on("click", handleClick);
+
+	var border = new createjs.Shape(
+			new createjs.Graphics().beginFill("#FFFFFF").drawRect(0, 0, w + borderPadding, h + borderPadding).endFill()
+	).set({
+		rotation: bmp.rotation,
+		regX: w / 2,
+		regY: h / 2,
+		scaleX: bmp.scaleX,
+		scaleY: bmp.scaleY,
+		shadow: new createjs.Shadow("#000000", 0, 0, 2.5)
+	});
+
+	var container = new createjs.Container();
+	container.addChild(border, bmp);
+	imageContainer.addChild(container);
+	stage.update();
+}
+
+function handleClick(event) {
+	currentItem = event.target.parent;
+	createjs.Tween.get(currentItem, {override: true})
+			.to({y: -300, rotation:currentItem.rotation+Math.random()*30-15}, 200, createjs.Ease.quadInOut)
+			.call(tweenUpComplete)
+			.to({y: 0, rotation:currentItem.rotation}, 600, createjs.Ease.quadOut)
+			.on("change", handleTweenChange);
+}
+
+function handleTweenChange(tween) {
+	stage.update();
+}
+
+function tweenUpComplete(event) {
+	imageContainer.addChildAt(currentItem, 0);
+}
+
+function handleComplete(event) {
+	loaderBar.visible = false;
+	stage.update();
+}
+</script>
+
+        <section id="servicos" class="servicos">
+            <div class="container-fluid">
+                <div class="container floating-text text-center">
+                    <h1 class="display-4" style="margin-bottom: 2rem">SERVIÇOS</h1>
+                    <div class="row justify-content-center" style="max-width: 98%; margin-left: 1%">
+                        <div class="col row justify-content-center" id="sistema">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="util/home/sisdev.png" style="margin: 1rem 0 1rem 0;" />
+                                    <h5 class="card-title">Sistema de Gerenciamento</h5>
+                                    <p class="card-text">Tenha controle do seu negócio, de maneira fácil e descomplicada,
+                                        sempre ao alcance de suas mãos. Identifique as partes mais lucrativas através de nossos relatórios.</p>
+                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalSistema">Mais detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col row justify-content-center" id="site">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="util/home/webdev.png" style="margin: 1rem 0 1rem 0;" />
+                                    <h5 class="card-title">Páginas Web</h5>
+                                    <p class="card-text">Leve todas as características do seu negócio para seu cliente,
+                                        com um site exclusivo que carrega consigo todas as características da sua empresa e do seu produto.</p>
+                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalSite">Mais detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col row justify-content-center" id="mobile">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="util/home/appdev.png" style="margin: 1rem 0 2rem 0;" />
+                                    <h5 class="card-title">Aplicativo Mobile</h5>
+                                    <p class="card-text">Desenvolva sua aplicação para Android, iOS e Windows Phone,
+                                        contando com uma vasta gama de recursos, sem deixar que isso reflita no valor do orçamento.</p>
+                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalMobile">Mais detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col row justify-content-center" id="outro">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="util/home/otherdev.png" style="margin: 1rem 0 2rem 0;" />
+                                    <h5 class="card-title">Outros</h5>
+                                    <p class="card-text">Possui uma ideia promissora e quer empreender, 
+                                        mas não domina as ferramentas necessárias para colocá-la em prática? Entre em contato, vamos conversar e fazer um orçamento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato">
+            <div class="container-fluid">
+                <h1 class="display-4 text-center">CONTATO</h1><br>
+
+                <div class="container" style="padding: 0 13% 0 13%">
+                    <div class="row">
+                        <div id="contact" class="col-sm text-center">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>Informações</h5>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" data-toggle="modal" data-target="#modalFormulario"><i class="far fa-paper-plane"></i> Envie uma mensagem</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:leandro160490@gmail.com"><i class="far fa-envelope"></i> leandro160490@gmail.com </a>
+                                </li>
+                                <li>
+                                    <a href="tel:5537999638523"><i class="fas fa-phone-square-alt"></i> +55 37 9 9963-8523 </a>
+                                </li>
+                                <li>
+                                    <i class="far fa-clock"></i> Atendimento: 09:00 às 17:00hs <i class="fas fa-cloud-sun"></i> de segunda a domingo
+                                </li>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="socials" class="col-sm text-center">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>Mídias Sociais</h5>
+                                </li>
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537999638523&text=Olá, tudo bem?" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/siglalp" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    if (window.innerHeight < window.innerWidth) {
+                        document.getElementById("contact").classList.remove('text-center');
+                        document.getElementById("contact").classList.add('text-left');
+                        document.getElementById("socials").classList.remove('text-center');
+                        document.getElementById("socials").classList.add('text-right');
+                    }
+                </script>
+
+                <div class="text-center" style="margin-top: 2rem">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h5><i class="fas fa-map-marker-alt"></i> Localização: <br>Rua Raul Gomes Bernardes, 2250 <br>Lagoa da Prata, 35590-000, Minas Gerais - Brasil</h5>
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.4756313062994!2d-45.52303368446689!3d-20.030510946616882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b37be3823522f3%3A0x30686bfccf4355fa!2sR.%20Raul%20Gomes%20Bernardes%2C%202250%20-%20Lagoa%20Da%20Prata%2C%20Lagoa%20da%20Prata%20-%20MG%2C%2035590-000!5e0!3m2!1spt-BR!2sbr!4v1587102102209!5m2!1spt-BR!2sbr" width="450" height="100" frameborder="0" style="border:0; max-width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer container-fluid">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto">
+                            Desenvolvimento:  <a href="https://github.com/ttbs1" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
+                        </div>
+                    </div>
+        </section>
+
+        <div class="modal fade" id="modalSistema" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Sistema de Gerenciamento: </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 text-justify">
+                                    Sistemas de gerenciamento comercial para: <br><br>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-utensils" style="color: darkred;"></i> Bares e Restaurantes
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-store-alt" style="color: green;"></i> Varejo
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-gas-pump" style="color: #d39e00;"></i> Posto de gasolina
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-pills" style="color: lightpink"></i> Farmácia
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-users" style="color: lightsteelblue"></i> Coordenação e gerenciamento de equipe e tarefas
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-justify">
+                                    Também é possível customizar as funcionalidades dos sistemas pré existentes, ou até mesmo planejar e criar do zero algo com todas as funcionalidades necessárias para suprir sua demanda.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            document.addEventListener('keyup', (e) => {
+                if (e.code === "ArrowLeft")
+                    back()
+                else if (e.code === "ArrowRight")
+                    next()
+            });
+
+            var list = [
+                '<div class="col" style="max-width: 20%;"><i class="fab fa-html5" style="color: rgb(237,118,50); font-size: 40px"></i><div style="height: 60px">HTML</div></div>',
+                '<div class="col" style="max-width: 20%;"><i class="fab fa-css3-alt" style="color: rgb(40,163,218); font-size: 40px"></i><div style="height: 60px">CSS</div></div>',
+                '<div class="col" style="max-width: 20%;"><i class="fab fa-js-square" style="color: rgb(248,211,56); font-size: 40px"></i><div style="height: 60px">JS</div></div>',
+                '<div class="col" style="max-width: 20%;"><i class="fab fa-php" style="color: rgb(104,122,177); font-size: 40px;"></i><div style="height: 60px">php</div></div>',
+                '<div class="col" style="max-width: 20%;"><img src="util/home/mysql.png" width="40px"/><div style="height: 60px">Mysql</div></div>',
+                '<div class="col" style="max-width: 20%;"><img src="util/home/bootstrap.png" width="40px"/><div style="height: 60px">Boot<br>strap</div></div>'
+            ];
+
+            var quantidade = 5;
+            if (window.innerHeight > window.innerWidth)
+                quantidade = 3;
+
+            var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
+            for (var i = 0; i < quantidade; i++)
+                aux += list[i];
+            aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
+
+            document.getElementById('tecnologias').innerHTML = aux;
+
+            function back() {
+                var seq = document.getElementById('sequencia');
+
+                if (seq.value == '0')
+                    seq.value = list.length - 2;
+                else
+                    seq.value = parseInt(seq.value) - 2;
+
+                next();
+
+            }
+
+            function next() {
+
+                var seq = document.getElementById('sequencia');
+                seq.value = parseInt(seq.value) + 1;
+                if (parseInt(seq.value) > list.length)
+                    seq.value = 1;
+                if (parseInt(seq.value) + quantidade <= list.length)
+                    var end = parseInt(seq.value) + quantidade;
+                else
+                    var end = parseInt(seq.value) + quantidade - list.length;
+
+                var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
+                for (var i = parseInt(seq.value); i !== end; i++)
+                    if (i == list.length) {
+                        i = 0;
+                        aux += list[i];
+                    } else
+                        aux += list[i];
+                aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
+
+                document.getElementById('tecnologias').innerHTML = aux;
+
+            }
+            ;
+        </script>
+        
+        <script src="util/wow_js/wow.js"></script>
+        <script>
+            
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+              console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+          }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+          var section = document.createElement('section');
+          section.className = 'section--purple wow fadeInDown';
+          this.parentNode.insertBefore(section, this);
+        };
+
+        </script>
+        
+    </body>
+</html>
