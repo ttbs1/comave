@@ -113,13 +113,14 @@ and open the template in the editor.
                     <p style="margin-top: 20px;"><strong></strong></p>
                     <div class="row justify-content-center">
                         <div class="col-sm-4 text-justify" style="margin-top: 20px;">
-                            <img src="util/comave/logo.png" width="40%" /><br><br>
-                            
-                            Empresa conceituada em Lagoa da Prata e toda região. 
-                            A Comave balanças é uma empresa que se preocupa não 
-                            só com valores mas com a qualidade de serviços que é 
-                            a nossa meta principal, trabalhamos para melhor atendê-los 
-                            com competência, segurança e credibilidade. 
+                            <img src="util/comave/logo.png" width="50%" /> <br><br>
+                            <div class="sketchy">
+                                Empresa conceituada em Lagoa da Prata e toda região. 
+                                A Comave balanças é uma empresa que se preocupa não 
+                                só com valores mas com a qualidade de serviços que é 
+                                a nossa meta principal, trabalhamos para melhor atendê-los 
+                                com competência, segurança e credibilidade. 
+                            </div>
                         </div>
                         <div class="col-sm-6" style="margin-top: 20px;">
                             
@@ -181,10 +182,12 @@ function init() {
 	stage.addChild(loaderBar);
 
 	manifest = [
-		{src: "image1.jpg", id: "image0"},
-		{src: "image2.jpg", id: "image1"},
-		{src: "image3.jpg", id: "image2"},
-		{src: "image0.jpg", id: "image3"}
+		{src: "comave5.jpg", id: "image0"},
+		{src: "comave1.jpg", id: "image1"},
+		{src: "comave2.jpg", id: "image2"},
+		{src: "comave4.jpg", id: "image3"},
+		{src: "comave3.jpg", id: "image4"},
+		{src: "comave0.jpg", id: "image5"}
 	];
 
 	preload = new createjs.LoadQueue(true, "test/");
@@ -273,10 +276,8 @@ function handleComplete(event) {
                             <div class="card text-center">
                                 <div class="card-body">
                                     <img src="util/home/sisdev.png" style="margin: 1rem 0 1rem 0;" />
-                                    <h5 class="card-title">Sistema de Gerenciamento</h5>
-                                    <p class="card-text">Tenha controle do seu negócio, de maneira fácil e descomplicada,
-                                        sempre ao alcance de suas mãos. Identifique as partes mais lucrativas através de nossos relatórios.</p>
-                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalSistema">Mais detalhes</a>
+                                    <h5 class="card-title">Venda</h5>
+                                    <p class="card-text">Venda de balanças de precisão, balanças rodoviárias e balanças comerciais. Venda de peças para manutenção e aprimoramento de modo geral.</p>
                                 </div>
                             </div>
                         </div>
@@ -284,10 +285,8 @@ function handleComplete(event) {
                             <div class="card text-center">
                                 <div class="card-body">
                                     <img src="util/home/webdev.png" style="margin: 1rem 0 1rem 0;" />
-                                    <h5 class="card-title">Páginas Web</h5>
-                                    <p class="card-text">Leve todas as características do seu negócio para seu cliente,
-                                        com um site exclusivo que carrega consigo todas as características da sua empresa e do seu produto.</p>
-                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalSite">Mais detalhes</a>
+                                    <h5 class="card-title">Manutenção</h5>
+                                    <p class="card-text">Manutenção e serviços em geral para diversos tipos de balanças.</p>
                                 </div>
                             </div>
                         </div>
@@ -295,10 +294,8 @@ function handleComplete(event) {
                             <div class="card text-center">
                                 <div class="card-body">
                                     <img src="util/home/appdev.png" style="margin: 1rem 0 2rem 0;" />
-                                    <h5 class="card-title">Aplicativo Mobile</h5>
-                                    <p class="card-text">Desenvolva sua aplicação para Android, iOS e Windows Phone,
-                                        contando com uma vasta gama de recursos, sem deixar que isso reflita no valor do orçamento.</p>
-                                    <a href="" class="btn btn-link" data-toggle="modal" data-target="#modalMobile">Mais detalhes</a>
+                                    <h5 class="card-title">Aferição</h5>
+                                    <p class="card-text">Verificação se em todos os pontos do prato da balança o resultado encontrado é o mesmo, ou se não foge das variações previstas para cada equipamento. Teste de precisão.</p>
                                 </div>
                             </div>
                         </div>
@@ -306,11 +303,13 @@ function handleComplete(event) {
                             <div class="card text-center">
                                 <div class="card-body">
                                     <img src="util/home/otherdev.png" style="margin: 1rem 0 2rem 0;" />
-                                    <h5 class="card-title">Outros</h5>
-                                    <p class="card-text">Possui uma ideia promissora e quer empreender, 
-                                        mas não domina as ferramentas necessárias para colocá-la em prática? Entre em contato, vamos conversar e fazer um orçamento.</p>
+                                    <h5 class="card-title">Caminhão Munck</h5>
+                                    <p class="card-text">Prestação de serviços de caminhão munck ou guindauto, possibilita carregar, transportar e descarregar cargas pesadas com facilidade e agilidade.</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-sm-12" style="margin-top: 40px;">
+                            <a href="servicos.html" class="btn btn-light">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -331,10 +330,10 @@ function handleComplete(event) {
                                     <a href="javascript:;" data-toggle="modal" data-target="#modalFormulario"><i class="far fa-paper-plane"></i> Envie uma mensagem</a>
                                 </li>
                                 <li>
-                                    <a href="mailto:leandro160490@gmail.com"><i class="far fa-envelope"></i> leandro160490@gmail.com </a>
+                                    <a href="mailto:a@gmail.com"><i class="far fa-envelope"></i> exemplo@gmail.com </a>
                                 </li>
                                 <li>
-                                    <a href="tel:5537999638523"><i class="fas fa-phone-square-alt"></i> +55 37 9 9963-8523 </a>
+                                    <a href="tel:5537999638523"><i class="fas fa-phone-square-alt"></i> (37) 3261-3066 </a>
                                 </li>
                                 <li>
                                     <i class="far fa-clock"></i> Atendimento: 09:00 às 17:00hs <i class="fas fa-cloud-sun"></i> de segunda a domingo
@@ -353,7 +352,10 @@ function handleComplete(event) {
                                     <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537999638523&text=Olá, tudo bem?" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/siglalp" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
+                                    <a href="https://www.instagram.com/comavebalancas" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/comercialyllek/" target="_blank"><i class="fab fa-facebook"></i> Facebook </a>
                                 </li>
                             </ul>
                         </div>
@@ -372,10 +374,10 @@ function handleComplete(event) {
                 <div class="text-center" style="margin-top: 2rem">
                     <ul class="list-unstyled">
                         <li>
-                            <h5><i class="fas fa-map-marker-alt"></i> Localização: <br>Rua Raul Gomes Bernardes, 2250 <br>Lagoa da Prata, 35590-000, Minas Gerais - Brasil</h5>
+                            <h5><i class="fas fa-map-marker-alt"></i> Localização: <br>Rua Bahia, 821 <br>Lagoa da Prata, 35590-000, Minas Gerais - Brasil</h5>
                         </li>
                         <li>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.4756313062994!2d-45.52303368446689!3d-20.030510946616882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b37be3823522f3%3A0x30686bfccf4355fa!2sR.%20Raul%20Gomes%20Bernardes%2C%202250%20-%20Lagoa%20Da%20Prata%2C%20Lagoa%20da%20Prata%20-%20MG%2C%2035590-000!5e0!3m2!1spt-BR!2sbr!4v1587102102209!5m2!1spt-BR!2sbr" width="450" height="100" frameborder="0" style="border:0; max-width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.6099252357867!2d-45.54164688508385!3d-20.024879786550702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b3796bfd28c267%3A0xd14a7465f55333c5!2sComave%20Balan%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1593206005789!5m2!1spt-BR!2sbr" width="450" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -434,91 +436,12 @@ function handleComplete(event) {
                 </div>
             </div>
         </div>
-        <script>
-
-            document.addEventListener('keyup', (e) => {
-                if (e.code === "ArrowLeft")
-                    back()
-                else if (e.code === "ArrowRight")
-                    next()
-            });
-
-            var list = [
-                '<div class="col" style="max-width: 20%;"><i class="fab fa-html5" style="color: rgb(237,118,50); font-size: 40px"></i><div style="height: 60px">HTML</div></div>',
-                '<div class="col" style="max-width: 20%;"><i class="fab fa-css3-alt" style="color: rgb(40,163,218); font-size: 40px"></i><div style="height: 60px">CSS</div></div>',
-                '<div class="col" style="max-width: 20%;"><i class="fab fa-js-square" style="color: rgb(248,211,56); font-size: 40px"></i><div style="height: 60px">JS</div></div>',
-                '<div class="col" style="max-width: 20%;"><i class="fab fa-php" style="color: rgb(104,122,177); font-size: 40px;"></i><div style="height: 60px">php</div></div>',
-                '<div class="col" style="max-width: 20%;"><img src="util/home/mysql.png" width="40px"/><div style="height: 60px">Mysql</div></div>',
-                '<div class="col" style="max-width: 20%;"><img src="util/home/bootstrap.png" width="40px"/><div style="height: 60px">Boot<br>strap</div></div>'
-            ];
-
-            var quantidade = 5;
-            if (window.innerHeight > window.innerWidth)
-                quantidade = 3;
-
-            var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
-            for (var i = 0; i < quantidade; i++)
-                aux += list[i];
-            aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
-
-            document.getElementById('tecnologias').innerHTML = aux;
-
-            function back() {
-                var seq = document.getElementById('sequencia');
-
-                if (seq.value == '0')
-                    seq.value = list.length - 2;
-                else
-                    seq.value = parseInt(seq.value) - 2;
-
-                next();
-
-            }
-
-            function next() {
-
-                var seq = document.getElementById('sequencia');
-                seq.value = parseInt(seq.value) + 1;
-                if (parseInt(seq.value) > list.length)
-                    seq.value = 1;
-                if (parseInt(seq.value) + quantidade <= list.length)
-                    var end = parseInt(seq.value) + quantidade;
-                else
-                    var end = parseInt(seq.value) + quantidade - list.length;
-
-                var aux = '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="back();"><i class="fas fa-chevron-left" style="font-size: 20px"></i></button></div>';
-                for (var i = parseInt(seq.value); i !== end; i++)
-                    if (i == list.length) {
-                        i = 0;
-                        aux += list[i];
-                    } else
-                        aux += list[i];
-                aux += '<div class="col align-self-center" style="max-width: 20%;"><button class="btn btn-link" onclick="next();"><i class="fas fa-chevron-right" style="font-size: 20px"></i></button></div>';
-
-                document.getElementById('tecnologias').innerHTML = aux;
-
-            }
-            ;
-        </script>
         
         <script src="util/wow_js/wow.js"></script>
         <script>
             
-        wow = new WOW(
-          {
-            animateClass: 'animated',
-            offset:       100,
-            callback:     function(box) {
-              console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
-          }
-        );
+        wow = new WOW();
         wow.init();
-        document.getElementById('moar').onclick = function() {
-          var section = document.createElement('section');
-          section.className = 'section--purple wow fadeInDown';
-          this.parentNode.insertBefore(section, this);
-        };
 
         </script>
         

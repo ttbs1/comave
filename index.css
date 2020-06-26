@@ -63,7 +63,7 @@ font-family: 'sketch';
 
 h1 {
     font-family: 'Archivo Black', sans-serif;
-    text-shadow: -3px 3px 1px #0685cb;
+    //text-shadow: -3px 3px 1px #0685cb;
 }
 
 h6 {
@@ -73,25 +73,25 @@ h6 {
 
 .btn-default {
     color: #fff;
-    background-color: #0685cb;
+    background-color: #289bd9;
     border-radius: 5px;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #0984c7;
 }
 
 .sobre {
     background-color: #f3f3f3;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     font-size: large;
 }
 
 .servicos {
-    background-image: url(util/home/1.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    background-color: #f3f3f3;
+    padding-bottom: 100px;
 }
 
 .servicos h1 {
@@ -99,7 +99,7 @@ h6 {
 }
 
 .contato {
-    background-image: linear-gradient(#aaaaaa, #999999 ,#888888 ,#777777 ,#666666 ,#555555 ,#444444 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333 ,#333333);
+    background-image: linear-gradient(#2d3f64,#222222);
     padding-top: 80px;
     padding-bottom: 20px;
     color: #fff;
@@ -109,6 +109,13 @@ h6 {
 
 .contato a {
     color: #f2f3f4;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+    color: #fff;
+    font-weight: 500;
 }
 
 .nocolor {
@@ -118,8 +125,11 @@ h6 {
 .floating-text {
     padding: 4%;
     border-radius: 20px;
-    background: rgba(245, 130, 32, 0.45);
-    background: rgba(105, 105, 105, 0.91);
+    background: rgba(45, 63, 100, 1);
+    max-width: 900px;
+    //border: 1px solid;
+    //padding: 10px;
+    box-shadow: 9px 9px #adadad;
 }
 
 p {
