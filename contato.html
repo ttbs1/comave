@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMAVE - Contato</title>
+        <link rel="icon" href="util/comave/logo-min.png" type="image/icon type">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="util/bootstrap 5/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="util/bootstrap 5/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="util/bootstrap 5/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_CggJsA9I6jfvbKOpxPsFL");
+            })();
+        </script>
+
+
+        <script src="util/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="util/validationForm.js"></script>
+        <script type="text/javascript" src="util/jquery.mask.js"></script>
+    </head>
+    <body>
+        <form id="contact-form" class="form-horizontal needs-validation" novalidate action="JavaScript:sendMail();">
+            <fieldset>
+                <legend>Contato: </legend>
+
+                <div class="form-group col-md-8">
+                    <label class="col-form-label" for="name">Nome: </label>
+                    <input class="form-control name" type="text" required name="name" id="name" placeholder="Nome" value="" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{3,50}" />
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Nome inválido.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-2">
+                        <label class="col-form-label" for="documento">Documento: </label>
+                        <input class="form-control documento" type="text" required inputmode="numeric" pattern=".{14}|.{18}" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF ou CNPJ" value="" />
+                        <div class="invalid-feedback">
+                            Documento inválido.
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        var Doc = function (val) {
+                            return val.replace(/\D/g, '').length >= 12 ? '00.000.000/0000-00' : '000.000.000-000';
+                        },
+                                docOptions = {
+                                    onKeyPress: function (val, e, field, options) {
+                                        field.mask(Doc.apply({}, arguments), options);
+                                    }
+                                };
+
+                        $('.documento').mask(Doc, docOptions);
+
+                    </script>
+
+                    <div class="form-group col-md-2">
+                        <label class="col-form-label" for="telefone">Telefone: </label>
+                        <input class="form-control telefone" type="text" required inputmode="tel" pattern=".{13,14}" name="telefone1" id="telefone1" placeholder="(00)00000-0000" value="" />
+                        <div class="invalid-feedback">
+                            Telefone inválido.
+                        </div>
+                    </div>
+
+                <script type="text/javascript">
+
+                    var SPMaskBehavior = function (val) {
+                        return val.replace(/\D/g, '').length === 11 ? '(00)00000-0000' : '(00)0000-00000';
+                    },
+                            spOptions = {
+                                onKeyPress: function (val, e, field, options) {
+                                    field.mask(SPMaskBehavior.apply({}, arguments), options);
+                                }
+                            };
+
+                    $('.telefone').mask(SPMaskBehavior, spOptions);
+
+                </script>
+
+                    <div class="form-group col-md-4">
+                        <label class="col-form-label" for="email">E-Mail: </label>
+                        <input type="email" class="form-control" name="email" required id="email" placeholder="exemplo@meudominio.com" value="" pattern="[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,15}\.[a-z]{2,10}$" />
+                        <div class="invalid-feedback">
+                            E-mail inválido.
+                        </div>
+                    </div>
+                
+                </div>
+                <fieldset>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label class="col-form-label" for="rua">Rua: </label>
+                            <input type="text" class="form-control rua" required name="rua" id="rua" placeholder="Rua" value="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
+                            <div class="valid-feedback">
+                                Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Rua inválida.
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-1">
+                            <label class="col-form-label" for="numero">Numero: </label>
+                            <input type="text" class="form-control num" inputmode="numeric" pattern=".{1,7}" name="numero" id="numero" placeholder="Numero" value="" />
+                            <div class="invalid-feedback">
+                                Número inválido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4"> 
+                        <label class="col-form-label" for="bairro">Bairro: </label>
+                        <input type="text" class="form-control bairro" name="bairro" id="bairro" placeholder="Bairro" value="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
+                        <div class="invalid-feedback">
+                            Bairro inválido.
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group col-md-8">
+                    <label class="col-form-label" for="message">Mensagem: </label>
+                    <textarea name="message" maxlength="450" class="form-control" rows="4" required></textarea>
+                    <span id="passwordHelpInline" class="form-text">
+                        Máximo de 450 caracteres
+                    </span>
+                </div>
+            </fieldset>
+
+            <input type="submit" class="btn btn-success" value="Enviar">
+        </form>
+
+        <!-- nome, endereço,CPF/CNPJ,marca,modelo,capacidade máxima,defeito apresentado -->
+
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    //event.preventDefault();
+                    // generate the contact number value
+                    //this.contact_number.value = Math.random() * 100000 | 0;
+                    //document.getElementById("newForm").reset();
+                    //alert(this.);
+                });
+                
+            };
+            
+            function sendMail () {
+                alert("mail sent");
+                //emailjs.sendForm('arenacasadejogos@gmail.com', 'template_z2WK9iua', this);
+            };
+        </script>
+    </body>
+</html>
