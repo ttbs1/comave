@@ -20,6 +20,7 @@ and open the template in the editor.
         
         <script src="util/links/fontisawesome.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="util/wow_js/animate.css" />
 
@@ -36,10 +37,10 @@ and open the template in the editor.
     </head>
     <body onload="init()">
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar" style="padding-left: 15px; padding-right: 10px">
 
-            <a class="navbar-brand" href="#" style="margin-left: 15px;"><img src="util/comave/logo-no-shadow.png" width="100px" /></a>
-            <button id="navbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px">
+            <a class="navbar-brand" href="#" ><img src="util/comave/logo-no-shadow.png" width="100px" /></a>
+            <button id="navbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -122,21 +123,27 @@ and open the template in the editor.
                     <h1 class="display-4">SOBRE</h1>
                     <p style="margin-top: 20px;"><strong></strong></p>
                     <div class="row justify-content-center">
-                        <div class="col-sm-4 text-justify" style="margin-top: 20px;">
-                            <img src="util/comave/logo.png" width="50%" /> <br><br>
-                            <div class="sketchy">
-                                Empresa conceituada em Lagoa da Prata e toda região. 
-                                A Comave balanças é uma empresa que se preocupa não 
-                                só com valores mas com a qualidade de serviços que é 
-                                a nossa meta principal, trabalhamos para melhor atendê-los 
-                                com competência, segurança e credibilidade. 
+                        <div class="col-sm-6 text-justify" style="margin-top: 20px;">
+                            <img src="util/comave/logo.png" width="40%" /> <br><br>
+                            <div class="sobre-text">
+                                A COMAVE é uma empresa tradicional em Lagoa da Prata
+                                e região, durante XX anos vem atendendo clientes com
+                                muito comprometimento e profissionalismo. Atuamos com 
+                                balanças de precisão, balanças rodoviárias e balanças 
+                                comerciais, prestando serviço de aferição, venda de 
+                                acessórios e manutenção em geral. Oferecemos também 
+                                serviços de transporte e manuseio de cargas pesadas
+                                através de caminhões munck. Prezamos por um serviço
+                                transparente e um bom atendimento. Nossa equipe está
+                                sempre de prontidão para atendê-lo. Seja bem vindo a
+                                COMAVE BALANÇAS! FAQ
                             </div>
                         </div>
                         <div class="col-sm-6" style="margin-top: 20px;">
                             
                             <div><canvas id="myCanvas" width="540" height="400" style="max-width: 100%"></canvas></div>
                         </div>
-                        <div class="col-sm-12" style="margin-top: 20px;">
+                        <div class="col-sm-12" style="margin-top: 50px;">
                             
                             <a href="sobre.html" class="btn btn-default">Saiba mais</a>
                         </div>
@@ -285,7 +292,7 @@ function handleComplete(event) {
                         <div class="col row justify-content-center" id="venda">
                             <div class="card text-center">
                                 <div class="card-body">
-                                    <img src="util/home/sisdev.png" style="margin: 1rem 0 1rem 0;" />
+                                    <img src="util/home/venda.png" style="margin: 1rem 0 1rem 0;" />
                                     <h5 class="card-title">Venda</h5>
                                     <p class="card-text">Venda de balanças de precisão, balanças rodoviárias e balanças comerciais. Venda de peças para manutenção e aprimoramento de modo geral.</p>
                                 </div>
@@ -294,7 +301,7 @@ function handleComplete(event) {
                         <div class="col row justify-content-center" id="manutencao">
                             <div class="card text-center">
                                 <div class="card-body">
-                                    <img src="util/home/webdev.png" style="margin: 1rem 0 1rem 0;" />
+                                    <img src="util/home/manutencao.png" style="margin: 1rem 0 1rem 0;" />
                                     <h5 class="card-title">Manutenção</h5>
                                     <p class="card-text">Manutenção e serviços em geral para diversos tipos de balanças.</p>
                                 </div>
@@ -303,7 +310,7 @@ function handleComplete(event) {
                         <div class="col row justify-content-center" id="afericao">
                             <div class="card text-center">
                                 <div class="card-body">
-                                    <img src="util/home/appdev.png" style="margin: 1rem 0 2rem 0;" />
+                                    <img src="util/home/afericao.png" style="margin: 1rem 0 2rem 0;" />
                                     <h5 class="card-title">Aferição</h5>
                                     <p class="card-text">Verificação se em todos os pontos do prato da balança o resultado encontrado é o mesmo, ou se não foge das variações previstas para cada equipamento. Teste de precisão.</p>
                                 </div>
@@ -312,7 +319,7 @@ function handleComplete(event) {
                         <div class="col row justify-content-center" id="munck">
                             <div class="card text-center">
                                 <div class="card-body">
-                                    <img src="util/home/otherdev.png" style="margin: 1rem 0 2rem 0;" />
+                                    <img src="util/home/munck.png" style="margin: 1rem 0 2rem 0;" />
                                     <h5 class="card-title">Caminhão Munck</h5>
                                     <p class="card-text">Prestação de serviços de caminhão munck ou guindauto, possibilita carregar, transportar e descarregar cargas pesadas com facilidade e agilidade.</p>
                                 </div>
@@ -359,7 +366,7 @@ function handleComplete(event) {
                                     <h5>Mídias Sociais</h5>
                                 </li>
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537999638523&text=Olá, tudo bem?" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
+                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537988434097&text=Olá, tudo bem?" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/comavebalancas" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>

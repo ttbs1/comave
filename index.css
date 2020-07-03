@@ -18,11 +18,23 @@ html{
    scroll-behavior: smooth;
 }
 
+body {
+    
+}
+
 .navbar {
     background-color: rgba(247,247,247,0.1);
     transition-duration: 800ms;
 }
 
+.sobre-text {
+    //background-color: #F0F8FF;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+}
 
 .text-justify {
   text-align: justify;
