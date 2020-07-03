@@ -47,6 +47,10 @@ legend {
     color: #fff;
 }
 
+.nav-item a {
+    color: black !important;
+}
+
 .nav-item a:hover {
     background-color: #0685cb;
     color: #fff !important;

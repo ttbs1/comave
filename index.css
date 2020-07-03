@@ -14,6 +14,16 @@ font-family: 'sketch';
         url('util/fonts/sketch3D.ttf') format('truetype');
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgba(247,247,247,0.1);
+    transition-duration: 800ms;
+}
+
+
 .text-justify {
   text-align: justify;
   text-justify: inter-word;
@@ -124,7 +134,7 @@ h6 {
 
 .floating-text {
     padding: 4%;
-    border-radius: 20px;
+    border-radius: 3px;
     background: rgba(45, 63, 100, 1);
     max-width: 900px;
     //border: 1px solid;
@@ -140,6 +150,10 @@ p {
     margin-bottom: 1rem;
     font-size: small;
     width: 17rem;
+}
+
+.nav-item a {
+    color: black !important;
 }
 
 .nav-item a:hover {
