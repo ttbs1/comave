@@ -37,11 +37,9 @@ legend {
 
 .header {
     color: #fff;
-    padding: 20vh 0 12vh 0;
-    min-height: calc(100vh - 35px);
-    width: 100%;
-    background-image: url('util/comave/thumb-1920-589399.jpg');
-    overflow: hidden;
+    padding-top: 325px;
+    padding-bottom: 25px;
+    background-image: url('../../util/comave/thumb-1920-589399.jpg');
 }
 
 .formulario {
@@ -76,30 +74,16 @@ legend {
 
 a {
     color: #fff;
-    text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: 800;
+    color: #CEDBE4;
 }
 
-
-
-.accordion {
-    padding-top: 30px;
-    text-align: center !important;
-    width: 600px;
-    max-width: 100%;
+.xzoom-gallery {
+    margin-top: 10px
 }
 
-button {
-    color: #fff !important;
-    text-decoration: none !important;
-}
-
-.card, card-header {
-    background: none;
-    text-align: center;
+.xzoom {
+    margin-top: 40px
 }
