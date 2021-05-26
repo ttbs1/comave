@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMAVE - Balanças</title>
+        <link rel="icon" href="../../util/comave/logo-min.png" type="image/icon type">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="prix3fit.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="zoom.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_CggJsA9I6jfvbKOpxPsFL");
+            })();
+        </script>
+
+
+        <script src="util/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="util/validationForm.js"></script>
+        <script type="text/javascript" src="util/jquery.mask.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 15px; padding-right: 10px">
+
+            <a class="navbar-brand" href="index.html"><img src="../../util/comave/logo-no-shadow.png" width="100px" /></a>
+            <button id="navbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link black" href="index.html" onclick="closenav();">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="sobre.html" onclick="closenav();">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="closenav();">Serviços</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contato.html" onclick="closenav();">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid header">
+            <div class="row justify-content-center text-center">
+                <div class="col-auto">
+                    <h1>BALANÇAS</h1>
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Balanças rodoviárias</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Balanças de Plataforma</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balanças Comerciais</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-calibracao-tab" data-bs-toggle="pill" data-bs-target="#pills-calibracao" type="button" role="tab" aria-controls="pills-calibracao" aria-selected="false">Calibração de balanças</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><a href="javascript:;">Balança rodoviária sobre o piso/semiembutida</a> | <a href="javascript:;">Balança rodoviária embutida</a></div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><a href="javascript:;">6000 - Roletada</a> | <a href="javascript:;">6000 - Bancada</a> | <a href="javascript:;">6000 - Piso</a></div>
+                        <div class="tab-pane fade show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><a href="javascript:;">Balança Prix 3 fit</a> | <a href="balancas/comerciais/prix4uno.html">Balança Prix 4 Uno</a> | <a href="balmakone.html">Balança One - Computadora de preços</a></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/xzoom.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/bbbootstrap/libraries/main/xzoom.css" media="all" />
+            <div class="container d-flex cartao">
+                <section id="default" class="padding-top0">
+                    <div class="row">
+                        <div class="col-md-6 column">
+                            <div class="xzoom-container"> <img class="xzoom" id="xzoom-default" src="prix-3-fit400x400.jpg" xoriginal="prix-3-fit.jpg" />
+                                <div class="xzoom-thumbs"> <a href="prix-3-fit.jpg"> <img class="xzoom-gallery" width="80" src="prix-3-fit80x80.jpg" xpreview="prix-3-fit400x400.jpg"></a> <a href="prix-3-fit-fside.jpg"> <img class="xzoom-gallery" width="80" src="prix-3-fit-fside80x80.jpg" xpreview="prix-3-fit-fside400x400.jpg"></a> <a href="prix-3-fit-front.jpg"> <img class="xzoom-gallery" width="80" src="prix-3-fit-front80x80.jpg" xpreview="prix-3-fit-front400x400.jpg"></a> </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-justify">
+
+
+                            <h2><strong>Prix 3 Fit</strong></h2><br><br>
+                            
+                            A Prix 3 Fit, balança computadora digital da Toledo do Brasil, foi desenvolvida para agilizar processos, realizar pesagens confiáveis, com precisão e proporcionar ganho de valor à diversas modalidades de negócios do pequeno varejo.<br><br>
+
+                            A Toledo do Brasil, líder na área de pesagem, oferece aos clientes a balança computadora digital Prix 3 Fit como a solução ideal por ser bonita, compacta e moderna, além de reunir recursos tecnológicos exclusivos e que se integram perfeitamente em ambientes comerciais como, por exemplo, lojas de conveniência, sorveterias, lojas de açaí e restaurantes com buffet por quilo.<br><br>
+
+                            Mantendo os padrões de qualidade da Toledo do Brasil, a Prix 3 Fit proporciona facilidade de operação e baixa manutenção, dentre suas características, possui capacidade de pesagem até 15kg, prato em aço inoxidável com design moderno para evitar escoamento sobre a balança, teclado de fácil digitação, função tara e empacotamento, display LCD backlight com opcional de iluminação própria para ambientes mais escuros, acumulador diário de preços, configuração de datas e muito mais.<br>
+
+
+
+
+
+
+                        </div>
+
+                        <div class="col-md-12 text-justify">
+                            <br>
+                            <h2><strong>Características e Benefícios:</strong></h2><br>
+                            <ul>
+                                <li>Display de cristal líquido com backlight;</li>
+                                <li>Bateria interna recarregável;</li>
+                                <li>Carregador de bateria automático;</li>
+                                <li>Desligamento automático;</li>
+                                <li>Fonte adaptadora multivoltagem;</li>
+                                <li>Gabinete de plástico ABS;</li>
+                                <li>Função de pré-empacotamento;</li>
+                                <li>Flexibilidade de manuseio;</li>
+                                <li>Proteção contra interferências e sobrecargas;</li>
+                                <li>Acumulador diário de preço;</li>
+                                <li>Configuração de datas;</li>
+                                <li>Prato de pesagem de fácil higienização;</li>
+                                <li>Teclado de fácil digitação;</li>
+                                <li>Saída de dados: RS-232C (opcional) para interligação com microterminais ECF-PDV, ECF-MR, sistemas de automação e impressora matricial Toledo do Brasil, modelo 351.</li>
+                            </ul><br>
+                            
+                            <table class="table table-striped" style="text-align: left">
+                                <thead>
+                                    <th>
+                                        Especificações
+                                    </th>
+                                    <th>
+                                        
+                                    </th>
+                                    <th>
+                                        Prix 3 fit
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Capacidade de pesagem
+                                        </td>
+                                        <td>
+                                            15kg
+                                        </td>
+                                        <td>
+                                            Divisão de 2 g de 0 a 6,000 kg<br>
+                                            Divisão de 5 g de 6,005 a 15,000 kg
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Display
+                                        </td>
+                                        <td>
+                                            Tipo<br>
+                                            Dimensões e dígitos
+                                        </td>
+                                        <td>
+                                            Cristal líquido (LCD) com backlight na cor verde<br>
+                                            6,30 mm (L) x 16 mm (A)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Adaptador de parede multivoltagem
+                                        </td>
+                                        <td>
+                                            Entrada<br>
+                                            Saída
+                                        </td>
+                                        <td>
+                                            De 100 a 240 Vca / 50 - 60 Hz<br>
+                                            7,7 Vcc / 0,6 A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Bateria interna e recarregável
+                                        </td>
+                                        <td>
+                                            Autonomia<br>
+                                            Autodesligamento
+                                        </td>
+                                        <td>
+                                            Até 167 horas<br>
+                                            Configurável entre 1, 5, 10, 20 e 60 minutos ou desativado
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Prato de pesagem
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            Em aço inoxidável e com centro rebaixado, para evitar o escoamento de líquidos sobre os displays
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Teclado
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            Manta selada com teclas de contato momentâneo
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Gabinete
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            Em plástico ABS na cor preta
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Dimensões
+                                        </td>
+                                        <td>
+                                            Balança<br>
+                                            Prato de pesagem<br>
+                                            Embalagem
+                                        </td>
+                                        <td>
+                                            333mm (L) x 115 mm (A) x 300 mm (P)<br>
+                                            300 mm (L) x 230 mm (P)<br>
+                                            340 mm (L) x 390 mm (A) x 130 mm (P)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Peso
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            2,7 kg sem embalagem ou 3,2 kg embalada
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Inmetro
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            Em conformidade com a Portaria 236/94 e classe de exatidão III
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Temperatura de operação
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            De 5 a 35 °C
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Umidade relativa do ar
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            10 a 95% sem condensação
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+        </div>
+
+        <section class="footer container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    Desenvolvimento:  <a href="https://github.com/ttbs1" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
