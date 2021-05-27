@@ -42,11 +42,11 @@ body {
 }
 
 .inicio {
-    //background-image: url(util/comave/img222.jpg);
-    //background-position: center top;
-    //background-repeat: no-repeat;
-    //background-size: cover;
-    //background-attachment: fixed;
+    background-image: radial-gradient(farthest-corner at -150px -150px , #fff 0%, #000044 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     //color: #fff;
     //font-size: large;
     //text-shadow: 1px 1px 2px #000;
