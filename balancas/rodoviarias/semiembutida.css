@@ -8,6 +8,11 @@ and open the template in the editor.
     Author     : Thiago
 */
 
+.tabela {
+    max-width: 100%;
+    overflow: auto;
+}
+
 .cartao {
     //background-color: #F0F8FF;
     text-align: justify;
