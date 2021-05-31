@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMAVE - Balanças</title>
+        <link rel="icon" href="../../util/comave/logo-min.png" type="image/icon type">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="semiembutida.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="zoom.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_CggJsA9I6jfvbKOpxPsFL");
+            })();
+        </script>
+
+
+        <script src="util/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="util/validationForm.js"></script>
+        <script type="text/javascript" src="util/jquery.mask.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 15px; padding-right: 10px">
+
+            <a class="navbar-brand" href="../../index.html"><img src="../../util/comave/logo-no-shadow.png" width="100px" /></a>
+            <button id="navbutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link black" href="../../index.html" onclick="closenav();">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../sobre.html" onclick="closenav();">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../servicos.html" onclick="closenav();">Serviços</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../contato.html" onclick="closenav();">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid header">
+            <div class="row justify-content-center text-center">
+                <div class="col-auto">
+                    <h1>BALANÇAS</h1>
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Balanças rodoviárias</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Balanças de Plataforma</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balanças Comerciais</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-calibracao-tab" data-bs-toggle="pill" data-bs-target="#pills-calibracao" type="button" role="tab" aria-controls="pills-calibracao" aria-selected="false">Calibração de balanças</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><a href="javascript:;">Balança rodoviária sobre o piso/semiembutida</a> | <a href="embutida.html">Balança rodoviária embutida</a></div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><a href="../plataforma/bancada.html">6000 - Bancada</a> | <a href="../plataforma/piso.html">6000 - Piso</a></div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><a href="../comerciais/prix3fit.html">Balança Prix 3 fit</a> | <a href="../comerciais/prix4uno.html">Balança Prix 4 Uno</a> | <a href="../comerciais/balmakone.html">Balança One - Computadora de preços</a></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/xzoom.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/bbbootstrap/libraries/main/xzoom.css" media="all" />
+            <div class="container d-flex cartao">
+                <section id="default" class="padding-top0">
+                    <div class="row">
+                        <div class="col-md-6 column">
+                            <img src="sobre-o-piso-semiembutida.png" />
+                        </div>
+
+                        <div class="col-md-6 text-justify">
+
+
+                            <h2 style="text-align: left"><strong>Balanças rodoviárias eletrônicas sobre o piso ou semi-embutidas, do tipo "pitless"</strong></h2><br><br>
+                            
+                            <ul>
+                                <li>Células de cargas digitais, construídas totalmente em aço inox (polido), soldadas a laser, grau de proteção IP-68, conector blindado.</li>
+
+                                <li>Vigamento principal em aço certificado ASTM-A-36, junção com parafusos da linha industrial.</li>
+
+                                <li>Integração/conexão com qualquer tipo de impressora e microcomputadores para geração de relatórios e gerenciador de processos de pesagens.</li>
+
+                                <li>Piso em concreto ou metálico.</li>
+                            </ul>
+
+
+
+
+
+
+                        </div>
+
+                        <div class="col-md-12 text-justify">
+                            
+                            <h2><strong>Estrutura e dimensões: </strong></h2><br>
+                            <div class="row" style="">
+                                <div class="col justify-content-center text-center">
+                                    <h4><strong>Sobre o piso: </strong></h4><br>
+                                    <img src="sobre-o-piso.png" style="padding: 70px;"/><br><br>
+                                    <h4><strong>Semi-embutida: </strong></h4><br>
+                                    <img src="semiembutida.png" style="padding: 70px;"/><br><br>
+                                </div>
+                            </div>
+                            
+                            <table class="table table-striped" style="text-align: left">
+                                <thead>
+                                    <th>
+                                        Dimensões das plataformas
+                                    </th>
+                                    <th>
+                                        Capacidades
+                                    </th>
+                                    <th>
+                                        Aplicação
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            9 x 3,20m
+                                        </td>
+                                        <td>
+                                            40.000 kg
+                                        </td>
+                                        <td>
+                                            Truck
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            18 x 3,20m<br>
+                                            19 x 3,20m
+                                        </td>
+                                        <td>
+                                            60.000 kg até 100.000 kg
+                                        </td>
+                                        <td>
+                                            Carreta e bitrem
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            21 x 3,20m<br>
+                                            22 x 3,20m<br>
+                                            24 x 3,20m<br>
+                                            25 x 3,20m<br>
+                                            30 x 3,20m
+                                        </td>
+                                        <td>
+                                            60.000 kg até 150.000 kg
+                                        </td>
+                                        <td>
+                                            Carreta, bitrem, rodotrem, tritrem
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            32 x 3,20m<br>
+                                            36 x 3,20m<br>
+                                            38 x 3,20m<br>
+                                            42 x 3,20m
+                                        </td>
+                                        <td>
+                                            80.000 kg até 180.000 kg
+                                        </td>
+                                        <td>
+                                            Carreta, bitrem, rodotrem, tritrem
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            50 x 3,20m<br>
+                                            60 x 3,20m
+                                        </td>
+                                        <td>
+                                            100.000 kg até 180.000 kg
+                                        </td>
+                                        <td>
+                                            Carreta, bitrem, rodotrem, tritrem, quadritrem
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+        </div>
+
+        <section class="footer container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    Desenvolvimento:  <a href="https://github.com/ttbs1" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

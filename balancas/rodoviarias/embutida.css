@@ -11,10 +11,10 @@ and open the template in the editor.
 .cartao {
     //background-color: #F0F8FF;
     text-align: justify;
-    padding: 75px 0 75px 0;
+    padding: 90px 0 60px 0;
     font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 700;
+    //font-style: italic;
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -39,7 +39,7 @@ legend {
     color: #fff;
     padding-top: 325px;
     padding-bottom: 25px;
-    background-image: url('util/comave/thumb-1920-589399.jpg');
+    background-image: url('../../util/comave/thumb-1920-589399.jpg');
 }
 
 .formulario {
@@ -78,4 +78,17 @@ a {
 
 a:hover {
     color: #CEDBE4;
+}
+
+.xzoom-gallery {
+    margin-top: 10px
+}
+
+.xzoom {
+    margin-top: 40px
+}
+
+h2, h3 {
+    color:#0056b3;
+    font-weight: 500;
 }

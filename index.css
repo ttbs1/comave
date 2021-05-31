@@ -42,7 +42,8 @@ body {
 }
 
 .inicio {
-    background-image: radial-gradient(farthest-corner at -150px -150px , #fff 0%, #000044 100%);
+    //background-image: radial-gradient(farthest-corner at -150px -150px , #fff 0%, #000044 100%);
+    background-image: url(util/comave/thumb-1920-589399.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +58,7 @@ body {
 #textdiv {
     background: rgba(0,0,0,0.2);
     position: absolute;
-    margin: 40vh 0 0 0;
+    margin: 38vh 0 0 0;
     color: #fff;
     border-radius: 5px;
     padding: 1em;

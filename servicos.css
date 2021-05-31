@@ -78,19 +78,6 @@ legend {
     text-height: inherit;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: 800;
-}
-
-
-
 .accordion {
     padding-top: 30px;
     text-align: center !important;

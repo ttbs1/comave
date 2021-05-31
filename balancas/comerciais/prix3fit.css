@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : Thiago
 */
 
+.xzoom {
+    max-width: 100%;
+}
+
 .cartao {
     //background-color: #F0F8FF;
     text-align: justify;
@@ -91,4 +95,10 @@ a:hover {
 h2, h3 {
     color:#0056b3;
     font-weight: 500;
+}
+
+.tabela {
+    font-size: 14px;
+    max-width: 97vw;
+    overflow: auto;
 }
