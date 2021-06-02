@@ -36,7 +36,7 @@ legend {
 }
 
 .header {
-    color: #fff;
+    //color: #000;
     padding: 20vh 0 12vh 0;
     min-height: calc(100vh - 35px);
     width: 100%;
@@ -75,12 +75,12 @@ legend {
 }
 
 .header a {
-    color: #fff;
+    //color: #fff;
     text-decoration: none;
 }
 
 .header a:hover {
-    color: #fff;
+    //color: #fff;
     text-decoration: underline;
     font-weight: 800;
 }
@@ -95,7 +95,7 @@ legend {
 }
 
 button {
-    color: #fff !important;
+    color: #0685cb !important;
     text-decoration: none !important;
 }
 

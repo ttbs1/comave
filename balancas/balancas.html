@@ -5,27 +5,15 @@
         <link rel="icon" href="../util/comave/logo-min.png" type="image/icon type">
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../util/bootstrap 5/bootstrap.min.css" crossorigin="anonymous">
-        <script src="../util/bootstrap 5/popper.min.js" crossorigin="anonymous"></script>
-        <script src="../util/bootstrap 5/bootstrap.min.js" crossorigin="anonymous"></script>
+        <link href="../util/bootstrap 5/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="../util/bootstrap 5/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="balancas.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init("user_CggJsA9I6jfvbKOpxPsFL");
-            })();
-        </script>
-
-
-        <script src="../util/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="../util/validationForm.js"></script>
-        <script type="text/javascript" src="../util/jquery.mask.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -36,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 </ul>
                 <ul class="navbar-nav">
@@ -60,70 +48,56 @@
             <div class="row justify-content-center text-center">
                 <div class="col-auto">
                     <h1>BALANÇAS</h1>
-
-                    <div class="accordion" id="accordionExample">
-
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Balanças rodoviárias
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
+                    
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Balanças rodoviárias
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
                                     <a href="rodoviarias/semiembutida.html">Balança rodoviária sobre o piso/semiembutida</a><br>
                                     <a href="rodoviarias/embutida.html">Balança rodoviária embutida</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Balanças do tipo plataforma
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Balanças do tipo plataforma
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
                                     <a href="plataforma/bancada.html">6000 - Bancada</a><br>
                                     <a href="plataforma/piso.html">6000 - Piso</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Balanças comerciais
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Balanças comerciais
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
                                     <a href="comerciais/prix3fit.html">Balança Prix 3 fit</a><br>
                                     <a href="comerciais/prix4uno.html">Balança Prix 4 Uno</a><br>
                                     <a href="comerciais/balmakone.html">Balança One - Computadora de preços</a>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Calibração de balanças
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                <div class="card-body">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Calibração de balanças
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus 
                                     terry richardson ad squid. 3 wolf moon officia aute, non cupidatat <br>
                                     skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
@@ -136,7 +110,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
