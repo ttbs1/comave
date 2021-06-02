@@ -37,7 +37,7 @@ and open the template in the editor.
     </head>
     <body onload="init()">
 
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 15px; padding-right: 10px">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light" style="padding-left: 15px; padding-right: 10px">
 
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="util/comave/logo-no-shadow.png" width="100px" /></a>
@@ -50,7 +50,7 @@ and open the template in the editor.
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link black" href="index.html" onclick="closenav();">Início</a>
+                            <a class="nav-link black" href="#" onclick="closenav();">Início</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="sobre.html" onclick="closenav();">Sobre</a>
@@ -66,17 +66,17 @@ and open the template in the editor.
             </div>
         </nav>
         
-        <!--<script>
-            window.addEventListener("scroll", function (event) {
-                var scroll = this.scrollY;
-                console.log(scroll);
-                if (scroll <= 0)
-                    document.getElementById('navbar').style.backgroundColor = 'rgb(247,247,247,0.1)';
-                else
-                    document.getElementById('navbar').style.backgroundColor = '#f7f7f7';
-                //alert(document.getElementById('navbar').style.backgroundColor);
-            });
-        </script>-->
+        <script>
+                window.addEventListener("scroll", function (event) {
+                    var scroll = this.scrollY;
+                    console.log(scroll);
+                    if (scroll <= 0)
+                        document.getElementById('navbar').style.backgroundColor = 'rgba(247,247,247,0.2)';
+                    else
+                        document.getElementById('navbar').style.backgroundColor = '#f7f7f7';
+                    //alert(document.getElementById('navbar').style.backgroundColor);
+                });
+        </script>
 
                        
         <section id="inicio" class="inicio">

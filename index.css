@@ -23,8 +23,8 @@ body {
 }
 
 #navbar {
-    //background-color: rgba(247,247,247,0.1) !important;
-    //transition-duration: 800ms;
+    background-color: rgba(247,247,247,0.2);
+    transition-duration: 800ms;
 }
 
 .sobre-text {
@@ -59,7 +59,7 @@ body {
     text-align: end;
     background: rgba(0,0,0,0.2);
     position: absolute;
-    margin: 28vh 0 0 0;
+    margin: 38vh 0 0 0;
     color: #fff;
     border-radius: 5px;
     padding: 1em;
