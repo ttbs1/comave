@@ -177,10 +177,13 @@ button {
 .grid figure h2 {
   word-spacing: -0.15em;
   font-weight: 300;
+  text-shadow: 2px 2px #000;
 }
 
 .grid figure h2 span {
   font-weight: 800;
+  text-shadow: 2px 2px #000;
+  color: 
 }
 
 .grid figure h2,
