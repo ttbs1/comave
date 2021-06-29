@@ -101,3 +101,7 @@ td {
     max-width: 97vw;
     overflow: auto;
 }
+
+button {
+    color: #fff !important;
+}

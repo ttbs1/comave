@@ -96,3 +96,7 @@ h2, h3 {
     color:#0056b3;
     font-weight: 500;
 }
+
+button {
+    color: #fff !important;
+}

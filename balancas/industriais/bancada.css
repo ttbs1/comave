@@ -76,6 +76,10 @@ a {
     color: #fff;
 }
 
+button {
+    color: #fff !important;
+}
+
 a:hover {
     color: #CEDBE4;
 }
