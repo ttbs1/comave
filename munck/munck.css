@@ -8,6 +8,24 @@ and open the template in the editor.
     Author     : Thiago
 */
 
+
+
+.cartao {
+    //background-color: #F0F8FF;
+    text-align: justify;
+    padding: 75px 0 75px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    min-height: calc(100vh - 325px - 35px - 150px);
+    background-image: url('');
+}
+
+.cartao2 {
+    background-color: #C7D8E5;
+}
+
 textArea {
     resize: none;
 }
@@ -24,7 +42,7 @@ legend {
 .header {
     padding-top: 325px;
     padding-bottom: 25px;
-    background-image: url('util/comave/thumb-1920-589399.jpg');
+    background-image: url('../util/comave/thumb-1920-589399.jpg');
 }
 
 .formulario {
@@ -55,30 +73,4 @@ legend {
     background-color: #0685cb;
     color: #fff !important;
     text-height: inherit;
-}
-
-
-
-.contato {
-    background-image: linear-gradient(#2d3f64,#222222);
-    padding-top: 80px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-shadow: 1px 1px #000;
-    //font-size: large;
-}
-
-.contato a {
-    color: #f2f3f4;
-    text-decoration: none;
-}
-
-.contato a:hover {
-    text-decoration: underline;
-    color: #fff;
-    font-weight: 500;
-}
-
-#socials {
-    text-align: end;
 }

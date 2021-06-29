@@ -21,6 +21,7 @@
         </script>
 
 
+        <script src="util/links/fontisawesome.js" crossorigin="anonymous"></script>
         <script src="util/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="util/validationForm.js"></script>
         <script type="text/javascript" src="util/jquery.mask.js"></script>
@@ -153,7 +154,7 @@
 
                                     <div class="form-group col-md-3">
                                         <label class="col-form-label" for="numero">Numero: </label>
-                                        <input type="text" class="form-control num" inputmode="numeric" pattern=".{1,7}" name="numero" id="numero" placeholder="Numero" value="" />
+                                        <input type="text" class="form-control num" inputmode="numeric" pattern=".{1,7}" name="numero" id="numero" placeholder="Numero" value="" required="" />
                                         <div class="invalid-feedback">
                                             Número inválido.
                                         </div>
@@ -162,7 +163,7 @@
 
                                 <div class="form-group col-md-7"> 
                                     <label class="col-form-label" for="bairro">Bairro: </label>
-                                    <input type="text" class="form-control bairro" name="bairro" id="bairro" placeholder="Bairro" value="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
+                                    <input type="text" class="form-control bairro" name="bairro" id="bairro" placeholder="Bairro" value="" required="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
                                     <div class="invalid-feedback">
                                         Bairro inválido.
                                     </div>
@@ -185,7 +186,7 @@
                             
                             <div class="form-group col-md-12">
                                 <label class="col-form-label" for="defeito">Defeito apresentado: </label>
-                                <textarea name="defeito" maxlength="450" class="form-control" rows="4" required></textarea>
+                                <textarea name="defeito" maxlength="450" class="form-control" rows="4"></textarea>
                                 <span id="passwordHelpInline" class="form-text">
                                     Máximo de 450 caracteres
                                 </span>
@@ -193,9 +194,9 @@
                             
                             <div class="form-group col-md-12">
                                 <label class="col-form-label" for="message">Mensagem: </label>
-                                <textarea name="message" maxlength="450" class="form-control" rows="4"></textarea>
+                                <textarea required name="message" maxlength="450" class="form-control" rows="4"></textarea>
                                 <span id="passwordHelpInline" class="form-text">
-                                    Máximo de 450 caracteres
+                                    Máximo de 450 caracteres. Campo obrigatório.
                                 </span>
                             </div>
                             
@@ -208,10 +209,79 @@
             </div>
         </div>
         
+        <section id="contato" class="contato">
+            <div class="container-fluid">
+
+                <div class="container" style="padding: 0 13% 0 13%">
+                    <div class="row">
+                        <div class="col-2">
+
+                        </div>
+
+                        <div id="contact" class="col-sm-4">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h2>Informações</h2>
+                                </li>
+                                <li>
+                                    <a href="mailto:comavebalancas@yahoo.com.br" style="font-size: small"><i class="far fa-envelope"></i> comavebalancas@yahoo.com.br</a>
+                                </li>
+                                <li>
+                                    <a href="tel:553732613066"><i class="fas fa-phone-square-alt"></i> (37) 3261-3066 </a>
+                                </li>
+                                <li>
+                                    <i class="far fa-clock"></i> Atendimento: <br><i class="fa fa-long-arrow-right" aria-hidden="true"></i> 07:00 às 11:00hs <br><i class="fa fa-long-arrow-right" aria-hidden="true"></i> 12:30 às 17:30hs
+                                </li>
+                                <li>
+                                    <i class="fas fa-cloud-sun"></i> de segunda a sexta
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="socials" class="col-sm-4">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h2>Mídias Sociais</h2>
+                                </li>
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537988434097&text=Olá, tudo bem?" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/comavebalancas" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/comercialyllek/" target="_blank"><i class="fab fa-facebook"></i> Facebook </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    if (window.innerHeight < window.innerWidth) {
+                        document.getElementById("contact").classList.remove('text-center');
+                        document.getElementById("contact").classList.add('text-left');
+                        document.getElementById("socials").classList.remove('text-center');
+                        document.getElementById("socials").classList.add('text-right');
+                    }
+                </script>
+
+                <div class="text-center" style="margin-top: 2rem">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Localização: <br>Rua Bahia, 821 <br>Lagoa da Prata, 35590-000, Minas Gerais - Brasil
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.6099252357867!2d-45.54164688508385!3d-20.024879786550702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b3796bfd28c267%3A0xd14a7465f55333c5!2sComave%20Balan%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1593206005789!5m2!1spt-BR!2sbr" width="450" height="100" frameborder="0" style="border:0; max-width: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
         <section class="footer container-fluid">
                     <div class="row justify-content-md-center">
                         <div class="col-md-auto">
-                            Desenvolvimento:  <a href="https://github.com/ttbs1" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
+                            Desenvolvimento:  <a href="https://ttbs1.github.io/thiago" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
                         </div>
                     </div>
         </section>
@@ -238,7 +308,7 @@
               </div>
             </div>
         </div>
-
+        
         <!-- nome, endereço,CPF/CNPJ,marca,modelo,capacidade máxima,defeito apresentado -->
 
         <script type="text/javascript">
@@ -261,5 +331,6 @@
                 //document.getElementById("contact-form").reset();
             };
         </script>
+        
     </body>
 </html>

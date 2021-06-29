@@ -15,22 +15,22 @@ and open the template in the editor.
         <!-- Bootstrap CSS -->
         <link href="util/bootstrap 5/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <script src="util/bootstrap 5/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        
+
         <link rel="stylesheet" href="index.css">
-        
+
         <script src="util/links/fontisawesome.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="util/wow_js/animate.css" />
 
-        
-        
-	<script src="util/PreloadJS-master/examples.js"></script>
+
+
+        <script src="util/PreloadJS-master/examples.js"></script>
 
         <style>
             .wow:first-child {
-              visibility: hidden;
+                visibility: hidden;
             }
         </style>
 
@@ -65,20 +65,20 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        
+
         <script>
-                window.addEventListener("scroll", function (event) {
-                    var scroll = this.scrollY;
-                    console.log(scroll);
-                    if (scroll <= 0)
-                        document.getElementById('navbar').style.backgroundColor = 'rgba(247,247,247,0.2)';
-                    else
-                        document.getElementById('navbar').style.backgroundColor = '#f7f7f7';
-                    //alert(document.getElementById('navbar').style.backgroundColor);
-                });
+            window.addEventListener("scroll", function (event) {
+                var scroll = this.scrollY;
+                console.log(scroll);
+                if (scroll <= 0)
+                    document.getElementById('navbar').style.backgroundColor = 'rgba(247,247,247,0.2)';
+                else
+                    document.getElementById('navbar').style.backgroundColor = '#f7f7f7';
+                //alert(document.getElementById('navbar').style.backgroundColor);
+            });
         </script>
 
-                       
+
         <section id="inicio" class="inicio">
             <div>
                 <div class="row">
@@ -98,7 +98,7 @@ and open the template in the editor.
                  http://code.createjs.com -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        
+
         <section id="sobre" class="sobre">
             <div class="container-fluid">
                 <div class="container nocolor text-center">
@@ -122,149 +122,149 @@ and open the template in the editor.
                             </div>
                         </div>
                         <div class="col-sm-6" style="margin-top: 20px;">
-                            
+
                             <div><canvas id="myCanvas" width="540" height="400" style="max-width: 100%"></canvas></div>
                         </div>
                         <div class="col-sm-12" style="margin-top: 50px;">
-                            
+
                             <a href="sobre.html" class="btn btn-default">Saiba mais</a>
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
         </section>
-        
+
         <script type="text/javascript" id="editable">
-	
-var loaderBar;
-var stage;
-var bar;
-var imageContainer;
-var currentImage;
-var loaderWidth;
-var loaderColor;
-var borderPadding;
-var preload;
-var oldItem;
 
-function init() {
-	canvas = document.getElementById("myCanvas");
-	stage = new createjs.Stage(canvas);
-	stage.enableMouseOver(10);
+            var loaderBar;
+            var stage;
+            var bar;
+            var imageContainer;
+            var currentImage;
+            var loaderWidth;
+            var loaderColor;
+            var borderPadding;
+            var preload;
+            var oldItem;
 
-	borderPadding = 10;
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                stage = new createjs.Stage(canvas);
+                stage.enableMouseOver(10);
 
-	var barHeight = 20;
-	loaderColor = createjs.Graphics.getRGB(247, 247, 247);
-	loaderBar = new createjs.Container();
+                borderPadding = 10;
 
-	bar = new createjs.Shape();
-	bar.graphics.beginFill(loaderColor).drawRect(0, 0, 1, barHeight).endFill();
+                var barHeight = 20;
+                loaderColor = createjs.Graphics.getRGB(247, 247, 247);
+                loaderBar = new createjs.Container();
 
-	imageContainer = new createjs.Container();
-	imageContainer.x = 260;
-	imageContainer.y = 200;
+                bar = new createjs.Shape();
+                bar.graphics.beginFill(loaderColor).drawRect(0, 0, 1, barHeight).endFill();
 
-	loaderWidth = 300;
-	stage.addChild(imageContainer);
+                imageContainer = new createjs.Container();
+                imageContainer.x = 260;
+                imageContainer.y = 200;
 
-	var bgBar = new createjs.Shape();
-	var padding = 3
-	bgBar.graphics.setStrokeStyle(1).beginStroke(loaderColor).drawRect(-padding / 2, -padding / 2, loaderWidth + padding, barHeight + padding);
+                loaderWidth = 300;
+                stage.addChild(imageContainer);
 
-	loaderBar.x = canvas.width - loaderWidth >> 1;
-	loaderBar.y = canvas.height - barHeight >> 1;
-	loaderBar.addChild(bar, bgBar);
+                var bgBar = new createjs.Shape();
+                var padding = 3
+                bgBar.graphics.setStrokeStyle(1).beginStroke(loaderColor).drawRect(-padding / 2, -padding / 2, loaderWidth + padding, barHeight + padding);
 
-	stage.addChild(loaderBar);
+                loaderBar.x = canvas.width - loaderWidth >> 1;
+                loaderBar.y = canvas.height - barHeight >> 1;
+                loaderBar.addChild(bar, bgBar);
 
-	manifest = [
-		{src: "comave5.jpg", id: "image0"},
-		{src: "comave1.jpg", id: "image1"},
-		{src: "comave2.jpg", id: "image2"},
-		{src: "comave4.jpg", id: "image3"},
-		{src: "comave3.jpg", id: "image4"},
-		{src: "comave0.jpg", id: "image5"}
-	];
+                stage.addChild(loaderBar);
 
-	preload = new createjs.LoadQueue(true, "test/");
+                manifest = [
+                    {src: "comave5.jpg", id: "image0"},
+                    {src: "comave1.jpg", id: "image1"},
+                    {src: "comave2.jpg", id: "image2"},
+                    {src: "comave4.jpg", id: "image3"},
+                    {src: "comave3.jpg", id: "image4"},
+                    {src: "comave0.jpg", id: "image5"}
+                ];
 
-	// Use this instead to use tag loading
-	//preload = new createjs.LoadQueue(false);
+                preload = new createjs.LoadQueue(true, "test/");
 
-	preload.on("progress", handleProgress);
-	preload.on("complete", handleComplete);
-	preload.on("fileload", handleFileLoad);
-	preload.loadManifest(manifest, true, "util/PreloadJS-master/art/");
+                // Use this instead to use tag loading
+                //preload = new createjs.LoadQueue(false);
 
-	createjs.Ticker.framerate = 30;
-}
+                preload.on("progress", handleProgress);
+                preload.on("complete", handleComplete);
+                preload.on("fileload", handleFileLoad);
+                preload.loadManifest(manifest, true, "util/PreloadJS-master/art/");
 
-function stop() {
-	if (preload != null) {
-		preload.close();
-	}
-}
+                createjs.Ticker.framerate = 30;
+            }
 
-function handleProgress(event) {
-	bar.scaleX = event.loaded * loaderWidth;
-}
+            function stop() {
+                if (preload != null) {
+                    preload.close();
+                }
+            }
 
-function handleFileLoad(event) {
-	var image = event.result;
-	var w = image.width;
-	var h = image.height;
+            function handleProgress(event) {
+                bar.scaleX = event.loaded * loaderWidth;
+            }
 
-	var bmp = new createjs.Bitmap(image).set({
-		 scaleX: 0.75, scaleY: 0.75,
-		 regX: w / 2, regY: h / 2,
-		 rotation: Math.random() * 16 - 8,
-		 cursor: "pointer",
-		 x: borderPadding / 2 * 0.75, y: borderPadding / 2 * 0.7
-	});
-	bmp.on("click", handleClick);
+            function handleFileLoad(event) {
+                var image = event.result;
+                var w = image.width;
+                var h = image.height;
 
-	var border = new createjs.Shape(
-			new createjs.Graphics().beginFill("#FFFFFF").drawRect(0, 0, w + borderPadding, h + borderPadding).endFill()
-	).set({
-		rotation: bmp.rotation,
-		regX: w / 2,
-		regY: h / 2,
-		scaleX: bmp.scaleX,
-		scaleY: bmp.scaleY,
-		shadow: new createjs.Shadow("#000000", 0, 0, 2.5)
-	});
+                var bmp = new createjs.Bitmap(image).set({
+                    scaleX: 0.75, scaleY: 0.75,
+                    regX: w / 2, regY: h / 2,
+                    rotation: Math.random() * 16 - 8,
+                    cursor: "pointer",
+                    x: borderPadding / 2 * 0.75, y: borderPadding / 2 * 0.7
+                });
+                bmp.on("click", handleClick);
 
-	var container = new createjs.Container();
-	container.addChild(border, bmp);
-	imageContainer.addChild(container);
-	stage.update();
-}
+                var border = new createjs.Shape(
+                        new createjs.Graphics().beginFill("#FFFFFF").drawRect(0, 0, w + borderPadding, h + borderPadding).endFill()
+                        ).set({
+                    rotation: bmp.rotation,
+                    regX: w / 2,
+                    regY: h / 2,
+                    scaleX: bmp.scaleX,
+                    scaleY: bmp.scaleY,
+                    shadow: new createjs.Shadow("#000000", 0, 0, 2.5)
+                });
 
-function handleClick(event) {
-	currentItem = event.target.parent;
-	createjs.Tween.get(currentItem, {override: true})
-			.to({y: -300, rotation:currentItem.rotation+Math.random()*30-15}, 200, createjs.Ease.quadInOut)
-			.call(tweenUpComplete)
-			.to({y: 0, rotation:currentItem.rotation}, 600, createjs.Ease.quadOut)
-			.on("change", handleTweenChange);
-}
+                var container = new createjs.Container();
+                container.addChild(border, bmp);
+                imageContainer.addChild(container);
+                stage.update();
+            }
 
-function handleTweenChange(tween) {
-	stage.update();
-}
+            function handleClick(event) {
+                currentItem = event.target.parent;
+                createjs.Tween.get(currentItem, {override: true})
+                        .to({y: -300, rotation: currentItem.rotation + Math.random() * 30 - 15}, 200, createjs.Ease.quadInOut)
+                        .call(tweenUpComplete)
+                        .to({y: 0, rotation: currentItem.rotation}, 600, createjs.Ease.quadOut)
+                        .on("change", handleTweenChange);
+            }
 
-function tweenUpComplete(event) {
-	imageContainer.addChildAt(currentItem, 0);
-}
+            function handleTweenChange(tween) {
+                stage.update();
+            }
 
-function handleComplete(event) {
-	loaderBar.visible = false;
-	stage.update();
-}
-</script>
+            function tweenUpComplete(event) {
+                imageContainer.addChildAt(currentItem, 0);
+            }
+
+            function handleComplete(event) {
+                loaderBar.visible = false;
+                stage.update();
+            }
+        </script>
 
         <section id="servicos" class="servicos">
             <div class="container-fluid">
@@ -277,6 +277,17 @@ function handleComplete(event) {
                                     <img src="util/home/venda.png" style="margin: 1rem 0 1rem 0;" />
                                     <h5 class="card-title">Venda</h5>
                                     <p class="card-text">Venda de balanças de precisão, balanças rodoviárias e balanças comerciais. Venda de peças para manutenção e aprimoramento de modo geral.</p>
+                                    <a href="balancas/balancas.html" class="btn btn-primary">Mais detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col row justify-content-center" id="munck">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <img src="util/home/munck.png" style="margin: 1rem 0 1rem 0;" />
+                                    <h5 class="card-title">Caminhão Munck</h5>
+                                    <p class="card-text">Prestação de serviços de caminhão munck ou guindauto, possibilita carregar, transportar e descarregar cargas pesadas com facilidade e agilidade.</p>
+                                    <a href="munck/munck.html" class="btn btn-primary">Mais detalhes</a>
                                 </div>
                             </div>
                         </div>
@@ -286,29 +297,22 @@ function handleComplete(event) {
                                     <img src="util/home/manutencao.png" style="margin: 1rem 0 1rem 0;" />
                                     <h5 class="card-title">Manutenção</h5>
                                     <p class="card-text">Manutenção e serviços em geral para diversos tipos de balanças.</p>
+                                    <a href="balancas/balancas.html#calib" class="btn btn-primary">Mais detalhes</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col row justify-content-center" id="afericao">
                             <div class="card text-center">
                                 <div class="card-body">
-                                    <img src="util/home/afericao.png" style="margin: 1rem 0 2rem 0;" />
-                                    <h5 class="card-title">Aferição</h5>
-                                    <p class="card-text">Verificação se em todos os pontos do prato da balança o resultado encontrado é o mesmo, ou se não foge das variações previstas para cada equipamento. Teste de precisão.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col row justify-content-center" id="munck">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <img src="util/home/munck.png" style="margin: 1rem 0 2rem 0;" />
-                                    <h5 class="card-title">Caminhão Munck</h5>
-                                    <p class="card-text">Prestação de serviços de caminhão munck ou guindauto, possibilita carregar, transportar e descarregar cargas pesadas com facilidade e agilidade.</p>
+                                    <img src="util/home/laudo.png" style="margin: 1rem 0 1rem 0;" />
+                                    <h5 class="card-title">Laudo de calibração</h5>
+                                    <p class="card-text">Trabalhamos com emissões de laudos para os mais diversos fins.</p>
+                                    <a href="balancas/balancas.html#calib" class="btn btn-primary">Mais detalhes</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12" style="margin-top: 40px;">
-                            <a href="servicos.html" class="btn btn-light">Saiba mais</a>
+                            <a href="contato.html" class="btn btn-light">Entre em contato</a>
                         </div>
                     </div>
                 </div>
@@ -321,9 +325,9 @@ function handleComplete(event) {
                 <div class="container" style="padding: 0 13% 0 13%">
                     <div class="row">
                         <div class="col-2">
-                            
+
                         </div>
-                        
+
                         <div id="contact" class="col-sm-4">
                             <ul class="list-unstyled">
                                 <li>
@@ -388,20 +392,20 @@ function handleComplete(event) {
         </section>
 
         <section class="footer container-fluid">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto">
-                            Desenvolvimento:  <a href="https://github.com/ttbs1" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
-                        </div>
-                    </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    Desenvolvimento:  <a href="https://ttbs1.github.io/thiago" target="_blank"> Thiago Túlio <i class="fab fa-git-square"></i></a>
+                </div>
+            </div>
         </section>
-        
+
         <script src="util/wow_js/wow.js"></script>
         <script>
-            
-        wow = new WOW();
-        wow.init();
+
+                    wow = new WOW();
+                    wow.init();
 
         </script>
-        
+
     </body>
 </html>

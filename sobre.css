@@ -18,6 +18,7 @@ and open the template in the editor.
     font-style: italic;
     font-weight: 500;
     font-size: 20px;
+    min-height: calc(100vh - 325px - 35px - 150px);
 }
 
 .cartao2 {
