@@ -32,7 +32,7 @@ textArea {
 
 h1 {
     font-family: 'Archivo Black', sans-serif;
-    color: #fff;
+    text-align: center;
 }
 
 legend {
@@ -40,9 +40,12 @@ legend {
 }
 
 .header {
-    padding-top: 325px;
+    padding-top: 425px;
     padding-bottom: 25px;
-    background-image: url('../util/comave/thumb-1920-589399.jpg');
+    background-image: url('bg.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .formulario {
