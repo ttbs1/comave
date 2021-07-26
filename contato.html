@@ -72,6 +72,9 @@
                     <form id="contact-form" class="form-horizontal needs-validation formulario" novalidate action="JavaScript:sendMail();">
                         <fieldset>
                             <legend>Contato: </legend>
+                            Obs: preencher o máximo de campos possível para facilitar e agilizar o contato
+                            
+                            <br><br>
 
                             <div class="form-group col-md-12">
                                 <label class="col-form-label" for="name">Nome: </label>
@@ -86,7 +89,7 @@
                             <div class="row">
                                 <div class="form-group col-md-3">
                                     <label class="col-form-label" for="documento">Documento: </label>
-                                    <input class="form-control documento" type="text" required inputmode="numeric" pattern=".{14}|.{18}" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF ou CNPJ" value="" />
+                                    <input class="form-control documento" type="text" inputmode="numeric" pattern=".{14}|.{18}" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF ou CNPJ" value="" />
                                     <div class="invalid-feedback">
                                         Documento inválido.
                                     </div>
@@ -143,7 +146,7 @@
                                 <div class="row">
                                     <div class="form-group col-md-9">
                                         <label class="col-form-label" for="rua">Rua: </label>
-                                        <input type="text" class="form-control rua" required name="rua" id="rua" placeholder="Rua" value="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
+                                        <input type="text" class="form-control rua" name="rua" id="rua" placeholder="Rua" value="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
                                         <div class="valid-feedback">
                                             Ok!
                                         </div>
@@ -154,7 +157,7 @@
 
                                     <div class="form-group col-md-3">
                                         <label class="col-form-label" for="numero">Numero: </label>
-                                        <input type="text" class="form-control num" inputmode="numeric" pattern=".{1,7}" name="numero" id="numero" placeholder="Numero" value="" required="" />
+                                        <input type="text" class="form-control num" inputmode="numeric" pattern=".{1,7}" name="numero" id="numero" placeholder="Numero" value="" />
                                         <div class="invalid-feedback">
                                             Número inválido.
                                         </div>
@@ -163,7 +166,7 @@
 
                                 <div class="form-group col-md-7"> 
                                     <label class="col-form-label" for="bairro">Bairro: </label>
-                                    <input type="text" class="form-control bairro" name="bairro" id="bairro" placeholder="Bairro" value="" required="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
+                                    <input type="text" class="form-control bairro" name="bairro" id="bairro" placeholder="Bairro" value="" pattern="[0-9]{0,4}\s?[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s*?]{1,25}[0-9]{0,4}" />
                                     <div class="invalid-feedback">
                                         Bairro inválido.
                                     </div>
@@ -172,15 +175,15 @@
                             <div class="row">
                                 <div class="form-group col-md-4">
                                     <label class="col-form-label" for="marca">Marca: </label>
-                                    <input type="text" class="form-control marca" required name="marca" id="marca" placeholder="Marca" value="" pattern=".{0,50}" />
+                                    <input type="text" class="form-control marca" name="marca" id="marca" placeholder="Marca" value="" pattern=".{0,50}" />
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label class="col-form-label" for="modelo">Modelo: </label>
-                                    <input type="text" class="form-control modelo" required name="modelo" id="modelo" placeholder="Modelo" value="" pattern=".{0,50}" />
+                                    <input type="text" class="form-control modelo" name="modelo" id="modelo" placeholder="Modelo" value="" pattern=".{0,50}" />
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label class="col-form-label" for="capacidade">Capacidade máxima: </label>
-                                    <input type="text" class="form-control capacidade" required name="capacidade" id="capacidade" placeholder="Capacidade máxima" value="" pattern=".{0,15}" />
+                                    <input type="text" class="form-control capacidade" name="capacidade" id="capacidade" placeholder="Capacidade máxima" value="" pattern=".{0,15}" />
                                 </div>
                             </div>
                             
@@ -199,6 +202,8 @@
                                     Máximo de 450 caracteres. Campo obrigatório.
                                 </span>
                             </div>
+                            
+                            <br>
                             
                             <input type="submit" class="btn btn-success" value="Enviar">
                             
