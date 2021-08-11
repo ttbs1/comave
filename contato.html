@@ -16,7 +16,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script type="text/javascript">
             (function () {
-                emailjs.init("user_CggJsA9I6jfvbKOpxPsFL");
+                emailjs.init("user_mk4JpS3BgefknpPxJY0RJ");
             })();
         </script>
 
@@ -297,9 +297,6 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLongTitle">Mensagem enviada! </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group col-md-8">
@@ -308,7 +305,26 @@
                     <div style="text-align: center;"><img src="util/confirma.png" height="175px" width="175px" /></div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Erro ao enviar! </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group col-md-8">
+                            Houve um erro ao enviar sua mensagem, tente novamente ou use outro canal de atendimento, e, por favor, nos informe sobre o ocorrido!
+                    </div>
+                    <div style="text-align: center;"><img src="util/delete.png" height="175px" width="175px" /></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
                 </div>
               </div>
             </div>
@@ -327,11 +343,17 @@
             };
             
             function sendMail () {
-                emailjs.sendForm('arenacasadejogos@gmail.com', 'template_z2WK9iua', '#contact-form');
-                var modal = new bootstrap.Modal(document.getElementById('confirmModal'), {
-                    keyboard: false
-                });
-                modal.show();
+                emailjs.sendForm('service_57ad1ic', 'template_zian4us', '#contact-form').then(function(response) {
+                    var modal = new bootstrap.Modal(document.getElementById('confirmModal'), {
+                         keyboard: false
+                     });
+                     modal.show();
+                 }, function(error) {
+                    var modal = new bootstrap.Modal(document.getElementById('errorModal'), {
+                         keyboard: false
+                     });
+                     modal.show();
+                 });
                 
                 //document.getElementById("contact-form").reset();
             };
